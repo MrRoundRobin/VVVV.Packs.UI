@@ -57,7 +57,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\Extentions.cs" />
+    <Compile Include="Extentions.cs" />
     <None Include="Nodes\Forms\FormsComboboxNode.cs" />
     <None Include="Nodes\Forms\FormsChecklistNode.cs" />
     <None Include="Nodes\WPF\WPFStyleNode.cs" />
