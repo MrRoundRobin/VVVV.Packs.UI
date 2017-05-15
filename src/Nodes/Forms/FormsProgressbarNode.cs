@@ -4,9 +4,9 @@ using System.Windows.Forms;
 using VVVV.PluginInterfaces.V2;
 using VVVV.Utils.VMath;
 
-namespace VVVV.Forms.Nodes
+namespace VVVV.Packs.UI.Nodes.Forms
 {
-    [PluginInfo(Author = "Robster", Category = "Forms", Help = "Creates a progressbar control", Name = "Progressbar")]
+    [PluginInfo(Author = "Robster", Category = "WPF", Help = "Creates a progressbar UIElement", Name = "Progressbar")]
     public class FormsProgressbarNode : IPluginEvaluate
     {
 // ReSharper disable UnassignedField.Global

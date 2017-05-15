@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 using VVVV.PluginInterfaces.V2;
 
-namespace VVVV.Forms.Nodes
+namespace VVVV.Packs.UI.Nodes.Forms
 {
     [PluginInfo(Name = "Group", Category = "Forms", Author = "Robster", Help = "Groups all input controls to one output spread")]
     public class FormsGroupNode : IPluginEvaluate

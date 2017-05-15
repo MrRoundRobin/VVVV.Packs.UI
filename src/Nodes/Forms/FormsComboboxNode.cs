@@ -5,7 +5,8 @@ using System.Windows.Forms;
 using VVVV.PluginInterfaces.V2;
 using VVVV.Utils.VMath;
 
-namespace VVVV.Forms.Nodes
+namespace VVVV.Packs.UI.Nodes.Forms
+
 {
     [PluginInfo(Author = "Robster", Category = "Forms", Help = "Creates a combobox control", Name = "Combobox")]
     public class FormsComboboxNode : IPluginEvaluate

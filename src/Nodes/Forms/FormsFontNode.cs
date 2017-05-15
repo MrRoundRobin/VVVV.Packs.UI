@@ -2,7 +2,7 @@
 
 using VVVV.PluginInterfaces.V2;
 
-namespace VVVV.Forms.Nodes
+namespace VVVV.Packs.UI.Nodes.Forms
 {
     [PluginInfo(Author = "Robster", Category = "Forms", Help = "Font for controls", Name = "Font")]
     public class FormsFontNode : IPluginEvaluate

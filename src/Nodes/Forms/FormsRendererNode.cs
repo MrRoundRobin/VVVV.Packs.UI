@@ -6,7 +6,7 @@ using VVVV.PluginInterfaces.V1;
 using VVVV.PluginInterfaces.V2;
 using VVVV.Utils.VColor;
 
-namespace VVVV.Forms.Nodes
+namespace VVVV.Packs.UI.Nodes.Forms
 {
     [PluginInfo(Author = "Robster", Name = "Renderer", Category = "Forms", Help = "Renders Forms controls and displays the form", AutoEvaluate = true, InitialBoxHeight = 120, InitialBoxWidth = 160, InitialComponentMode = TComponentMode.InAWindow, InitialWindowHeight = 300, InitialWindowWidth = 400)]
     public class FormsRendererNode : UserControl, IPluginEvaluate, IUserInputWindow

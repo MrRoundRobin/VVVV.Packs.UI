@@ -5,7 +5,7 @@ using VVVV.PluginInterfaces.V2;
 using VVVV.Utils.VColor;
 using VVVV.Utils.VMath;
 
-namespace VVVV.Forms.Nodes
+namespace VVVV.Packs.UI.Nodes.Forms
 {
     [PluginInfo(Author = "Robster", Category = "Forms", Help = "Creates a label control", Name = "Text")]
     public class FormsTextNode : IPluginEvaluate
