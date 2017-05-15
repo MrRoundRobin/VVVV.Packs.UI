@@ -8,7 +8,7 @@
     <RootNamespace>VVVV.Packs.UI</RootNamespace>
     <AssemblyName>VVVV.Packs.UI</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <OutputPath>build\$(Configuration)\vvvv-UI</OutputPath>
+    <OutputPath>..\build\$(Configuration)\vvvv-UI\nodes\plugins\</OutputPath>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -91,10 +91,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
-  <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
@@ -106,4 +102,10 @@
   </Target>
   <Import Project="packages\VVVV.PluginInterfaces.35.5.0\build\net46\VVVV.PluginInterfaces.targets" Condition="Exists('packages\VVVV.PluginInterfaces.35.5.0\build\net46\VVVV.PluginInterfaces.targets')" />
   <Import Project="packages\VVVV.Utils3rdParty.35.5.0\build\net46\VVVV.Utils3rdParty.targets" Condition="Exists('packages\VVVV.Utils3rdParty.35.5.0\build\net46\VVVV.Utils3rdParty.targets')" />
+  <Target Name="AfterBuild">
+    <ItemGroup>
+      <MyFiles Include="..\copy\**\*.*" />
+    </ItemGroup>
+    <Microsoft.Build.Tasks.Copy SourceFiles="@(MyFiles)" DestinationFiles="@(MyFiles->'..\build\$(Configuration)\vvvv-UI\%(RecursiveDir)%(Filename)%(Extension)')" />
+  </Target>
 </Project>

@@ -5,7 +5,7 @@ namespace VVVV.Packs.UI.Nodes.WPF
 {
     [PluginInfo(Author = "Robster", Category = "WPF", Help = "Creates a progressbar UIElement", Name = "Progressbar")]
     public class WPFProgressbarNode : WPFGenericNode<ProgressBar>, IPluginEvaluate
-    {
+    { 
         // ReSharper disable UnassignedField.Global
         // ReSharper disable MemberCanBePrivate.Global
 
