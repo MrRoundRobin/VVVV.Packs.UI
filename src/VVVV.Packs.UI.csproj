@@ -73,20 +73,20 @@
     <Compile Include="Nodes\WPF\WPFRendererNode.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <None Include="Nodes\Forms\FormsTabsNode.cs" />
-    <None Include="Nodes\Forms\FormsCounterNode.cs" />
-    <None Include="Nodes\Forms\FormsFontNode.cs" />
-    <None Include="Nodes\Forms\FormsPictureNode.cs" />
-    <None Include="Nodes\Forms\FormsCheckboxNode.cs" />
-    <None Include="Nodes\Forms\FormsTextboxNode.cs" />
-    <None Include="Nodes\Forms\FormsTextNode.cs" />
-    <None Include="Nodes\Forms\FormsProgressbarNode.cs" />
-    <None Include="Nodes\Forms\FormsSliderNode.cs" />
-    <None Include="Nodes\Forms\FormsButtonNode.cs" />
-    <None Include="Nodes\Forms\FormsGroupNode.cs" />
-    <None Include="Nodes\Forms\FormsRendererNode.cs">
+    <Compile Include="Nodes\Forms\FormsTabsNode.cs" />
+    <Compile Include="Nodes\Forms\FormsCounterNode.cs" />
+    <Compile Include="Nodes\Forms\FormsFontNode.cs" />
+    <Compile Include="Nodes\Forms\FormsPictureNode.cs" />
+    <Compile Include="Nodes\Forms\FormsCheckboxNode.cs" />
+    <Compile Include="Nodes\Forms\FormsTextboxNode.cs" />
+    <Compile Include="Nodes\Forms\FormsTextNode.cs" />
+    <Compile Include="Nodes\Forms\FormsProgressbarNode.cs" />
+    <Compile Include="Nodes\Forms\FormsSliderNode.cs" />
+    <Compile Include="Nodes\Forms\FormsButtonNode.cs" />
+    <Compile Include="Nodes\Forms\FormsGroupNode.cs" />
+    <Compile Include="Nodes\Forms\FormsRendererNode.cs">
       <SubType>UserControl</SubType>
-    </None>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
   </ItemGroup>
